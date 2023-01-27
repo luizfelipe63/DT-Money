@@ -15,6 +15,15 @@
       "category": "Alimentação",
       "price": 30,
       "createdAt": "2023-01-26T17:30:01.279Z"
+    },
+    {
+      "id": 3,
+      "transaction": "Carro",
+      "type": "outcome",
+      "category": "Pessoal",
+      "price": 150,
+      "createdAt": "2023-01-26T17:29:01.279Z"
     }
+    
   ]
 }

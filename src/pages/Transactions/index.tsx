@@ -1,32 +1,15 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Header } from "../../components/Header";
 import { Summary } from "../../components/Summary";
+import { TransactionsContext } from "../../contexts/TransactionsContex";
+import { dataFomatter, priceFormatter } from "../../utils/Formatter";
 import { SearchForm } from "./Components/SearchForm";
 import { PriceHightLight, TransactionsContainer, TransactionsTable } from "./styles";
 
-interface Transaction{
-  id: number
-  transaction: string
-  type: 'income' | 'outcome'
-  category: string
-  price: string
-  createdAt: string
-}
+
 
 export function Transactions(){
-  const [transaction, setTransaction] = useState<Transaction[]>([])
-
-  async function loadTransactions(){
-    const response = await fetch("http://localhost:3000/transactions")
-    const data = await response.json()
-
-    setTransaction(data)
-  }
-
-  useEffect(() => {
-    loadTransactions()
-  }, [])
-
+  const {transactions} = useContext(TransactionsContext)
   return(
     <div>
       <Header/>
@@ -36,17 +19,18 @@ export function Transactions(){
         <SearchForm/>
         <TransactionsTable>
           <tbody>
-            {transaction.map(transaction => {
+            {transactions.map(transaction => {
               return(
                 <tr key={transaction.id}>
                   <td width='50%'>{transaction.transaction}</td>
                   <td>
                     <PriceHightLight variant={transaction.type}>
-                      {transaction.price}
+                      {transaction.type === "outcome" && '- '}
+                      {priceFormatter.format(transaction.price)}
                     </PriceHightLight>
                   </td>
                   <td>{transaction.category}</td>
-                  <td>{transaction.createdAt}</td>
+                  <td>{dataFomatter.format(new Date(transaction.createdAt))}</td>
                 </tr>
               )
             })}
