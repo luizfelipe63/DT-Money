@@ -22,7 +22,7 @@ export function Transactions(){
             {transactions.map(transaction => {
               return(
                 <tr key={transaction.id}>
-                  <td width='50%'>{transaction.transaction}</td>
+                  <td width='50%'>{transaction.description}</td>
                   <td>
                     <PriceHightLight variant={transaction.type}>
                       {transaction.type === "outcome" && '- '}

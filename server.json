@@ -2,7 +2,7 @@
   "transactions": [
     {
       "id": 1,
-      "transaction": "Desenvolvimento de site",
+      "description": "Desenvolvimento de site",
       "type": "income",
       "category": "Venda",
       "price": 1400,
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "transaction": "Hamburguer",
+      "description": "Hamburguer",
       "type": "outcome",
       "category": "Alimentação",
       "price": 30,
@@ -18,12 +18,19 @@
     },
     {
       "id": 3,
-      "transaction": "Carro",
+      "description": "Carro",
       "type": "outcome",
       "category": "Pessoal",
       "price": 150,
       "createdAt": "2023-01-26T17:29:01.279Z"
+    },
+    {
+      "description": "Mouse",
+      "price": 200,
+      "type": "outcome",
+      "category": "Pessoal",
+      "createdAt": "2023-02-02T22:49:03.002Z",
+      "id": 4
     }
-    
   ]
 }
