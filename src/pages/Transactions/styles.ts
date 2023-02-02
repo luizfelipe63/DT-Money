@@ -16,8 +16,8 @@ export const TransactionsTable = styled.table`
 
   td {
     padding: 1.25rem 2rem;
-    background: ${props => props.theme['gray-700']};
-    color: ${props => props.theme['gray-300']};
+    background: ${(props) => props.theme['gray-700']};
+    color: ${(props) => props.theme['gray-300']};
 
     &:first-child {
       border-top-left-radius: 5px;
@@ -35,7 +35,7 @@ interface PriceHightLightProps {
 }
 
 export const PriceHightLight = styled.span<PriceHightLightProps>`
-  color: ${props =>
+  color: ${(props) =>
     props.variant === 'income'
       ? props.theme['green-300']
       : props.theme['red-300']};
