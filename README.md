@@ -3,7 +3,7 @@
   <h1 align="center">Luiz Felipe - DT-Money :money_with_wings:</h1>
 
 <div align="center">
-  <video src="./src/public/screenchot.mp4" />
+  <video src="https://user-images.githubusercontent.com/75274860/218332769-d94fe0e3-16ac-46d0-bff5-9cc3e23f8789.mp4"/>
 </div>
 
 <br>
