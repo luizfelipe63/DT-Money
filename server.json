@@ -39,6 +39,22 @@
       "category": "Pessoal",
       "createdAt": "2023-02-04T01:32:25.300Z",
       "id": 5
+    },
+    {
+      "description": "Desenvolvimento de App",
+      "price": 15000,
+      "type": "income",
+      "category": "Venda",
+      "createdAt": "2023-02-11T00:36:37.282Z",
+      "id": 6
+    },
+    {
+      "description": "Fiat Uno",
+      "price": 10000,
+      "type": "outcome",
+      "category": "Compra",
+      "createdAt": "2023-02-12T18:57:40.050Z",
+      "id": 7
     }
   ]
 }

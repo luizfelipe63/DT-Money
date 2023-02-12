@@ -2,11 +2,13 @@
 
   <h1 align="center">Luiz Felipe - DT-Money :money_with_wings:</h1>
 
-<!-- <div align="center"><img src="./src/assets/ignite-timer.gif"></div> -->
+<div align="center">
+  <video src="./src/public/screenchot.mp4" />
+</div>
 
 <br>
 
-> :mag_right: O DT-Money é uma Aplicação
+> :mag_right: O DT-Money é uma aplicação que consiste em imitar um fluxo financeiro, em que mostra o número de entradas, saídas e o total de transações feitas pelo usuário. O usuário ainda tem a opção de realizar uma busca por suas transações.
 > <br>
 
 ## :computer: Funcionalidades
