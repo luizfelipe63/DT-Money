@@ -16,7 +16,6 @@
 - Criar nova transação
 - Calcular resumo de transações
 - Buscar por transação
-- Interromper um ciclo
 - Conectar com Api via axios
 
 ## :rocket: Tecnologias
@@ -51,6 +50,7 @@ git clone https://github.com/luizfelipe63/DT-Money
 cd DT-Money
 npm install
 npm run dev
+npm run dev:server
 ```
 
 ## :punch: Colaboradores
